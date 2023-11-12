@@ -1,0 +1,115 @@
+@import "../../styles/util";
+.founder {
+  padding: 50px 0;
+  @include min(1200) {
+    padding: size(110) 0;
+  }
+  background: #faf9f7;
+  &_img {
+    .title{
+      margin-bottom: 20px !important;
+      @include min(992){
+        margin-bottom: size(30);
+      }
+    }
+    @include min(992) {
+      max-width: 435px;
+      figure {
+        transition: 0.6s cubic-bezier(0.8, 0, 0, 1);
+        clip-path: inset(0% 100% 0% 0%);
+        margin-bottom: 0;
+      }
+    }
+    figure {
+      --bs-aspect-ratio: 123.23%;
+      @include max(767.98) {
+        margin-bottom: 50px;
+      }
+    }
+  }
+  &_about {
+    @include min(992) {
+      padding: size(50) 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-left: 100px;
+      height: 100%;
+    }
+    @include min(1200) {
+      max-width: 740px;
+    }
+    .title{
+      @include min(992){
+        margin-bottom: size(40);
+        font-family: var(--bs-second-font-family);
+      }
+    }
+    &_discription {
+      font-size: 18px;
+      
+      @include lineHeight(18,30);
+      @include min(992) {
+       font-size: 20px;
+        @include lineHeight(24,35);
+        margin-bottom:size(40);
+        
+      }
+      @include max(991.988) {
+        margin-bottom: 25px;
+      }
+     
+    }
+    ul{
+      list-style-type: none;
+      padding: 0;
+      columns: 2;
+    
+      li{
+        font-size: 16px;
+        padding-left: 20px;
+        position: relative;
+        @include min(992){
+          font-size: 16px;
+        }
+        &::before{
+          position: absolute;
+          content: "";
+          left: 0;
+          top: 10px;
+          width: 5px;
+          height: 5px;
+          background-color: red;
+          border-radius: 7px 0 0;
+          @include min(992){
+            width: 7px;
+            height: 7px;
+          }
+        }
+        &+li{
+          margin-top: 10px;
+        
+        }
+      }
+    }
+    a{
+      font-size: 16px;
+      border: 1px solid #000;
+      padding: 5px 20px;
+      margin-top: 30px;
+      display: inline-block;
+      transition: all .3s ease-in-out;
+      &:hover{
+        background-color: #000;
+        color: #fff;
+      }
+    }
+  }
+  &:global(.visible) {
+    .founder_img {
+      figure {
+        clip-path: inset(0%);
+      }
+    }
+  }
+}

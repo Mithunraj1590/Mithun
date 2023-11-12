@@ -1,0 +1,18 @@
+@import "../../../styles/util";
+.btn_wrap{
+
+    :global(.btn_outline_primary){
+        &:hover{
+            color: #000;
+    }   
+    }
+   
+    a{
+        &:hover{
+            color: #fff;
+    }     
+    }
+}
+ 
+
+

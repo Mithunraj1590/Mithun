@@ -1,0 +1,357 @@
+{
+    "home": {
+        "data": {},
+        "widgets": [
+            {
+                "slug": "HomeBanner",
+                "data": {
+                    "title": "",
+                    "description": "",
+                    "image": "",
+                    "video": "",
+                    "know_more_btn": {
+                        "text": "",
+                        "link": ""
+                    }
+                }
+            },
+            {
+                "slug": "HomeAbout",
+                "data": {
+                    "title": "",
+                    "description": "",
+                    "image": "",
+                    "know_more_btn": {
+                        "name": "",
+                        "link": ""
+                    },
+                    "content": [
+                        {
+                            "title": "",
+                            "description": ""
+                        },
+                        {
+                            "title": "",
+                            "description": ""
+                        },
+                        {
+                            "title": "",
+                            "description": ""
+                        }
+                    ]
+                }
+            },
+            {
+                "slug": "HomeAllProjects",
+                "data": {
+                    "title": "Blogs",
+                    "card": [
+                        {
+                            "image": "/images/project.png",
+                            "title": "name",
+                            "technology":"Next.js, Bootstrap"
+                        },
+                        {
+                            "image": "/images/project.png",
+                            "title": "Name",
+                            "technology":"Next.js, Bootstrap"
+                            
+                        },
+                        {
+                            "image": "/images/project.png",
+                          
+                            "title": "Name",
+                            "technology":"Next.js, Bootstrap"
+                        },
+                        {
+                            "image": "/images/project.png",
+                          
+                            "title": "Name",
+                            "technology":"Next.js, Bootstrap"
+                        },
+                        {
+                            "image": "/images/project.png",
+                           
+                            "title": "name",
+                            "technology":"Next.js, Bootstrap"
+                        }
+                    ]
+                }
+            },
+            {
+                "slug": "HomeStories",
+                "data": {
+                    "title": "Testimonial",
+                    "stories": [
+                        {
+                            "img": "/images/person.jpg",
+                            "name": "mithun",
+                            "position":"ui",
+                            "description": "As a responsible business, we seek to transform communities"
+                        },
+                        {
+                            "img": "/images/person.jpg",
+                            "name": "mithun",
+                            "position":"ui",
+                            "description": "As a responsible business, we seek to transform communities"
+                        },
+                        {
+                            "img": "/images/person.jpg",
+                            "name": "mithun",
+                            "position":"ui",
+                            "description": "As a responsible business, we seek to transform communities"
+                        },
+                        {
+                            "img": "/images/person.jpg",
+                            "name": "mithun",
+                            "position":"ui",
+                            "description": "As a responsible business, we seek to transform communities"
+                        },
+                        {
+                            "img": "/images/person.jpg",
+                            "name": "mithun",
+                            "position":"ui",
+                            "description": "As a responsible business, we seek to transform communities"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "project-list": {
+        "widgets": [
+            {
+                "slug": "ProjectListing",
+                "data": {
+                    "title": "",
+                    "description": "",
+                    "tabs": [
+                        {
+                            "tab_name": "All",
+                            "tab_id": "content",
+                            "content": [
+                                {
+                                    "image": "/images/project.png",
+                                    "title": "name",
+                                    "technology":"Html, Bootstrap"
+                                    
+                                },
+                                {
+                                    "image": "/images/project.png",
+                                    "title": "name",
+                                    "technology":"next.js, Tailwind"
+                                   
+                                },
+                                {
+                                    "image": "/images/project.png",
+                                    "title": "name",
+                                    "technology":"Wordpress"
+                                    
+                                },
+                                {
+                                    "image": "/images/project.png",
+                                    "title": "name",
+                                    "technology":"Html. Bootstrap"
+                                    
+                                },
+                                {
+                                    "image": "/images/project.png",
+                                    "title": "name",
+                                    "technology":"Html. Bootstrap"
+                                    
+                                },
+                                {
+                                    "image": "/images/project.png",
+                                    "title": "name",
+                                    "technology":"Next.js, Bootstrap"
+                                    
+                                }
+                            ]
+                        },
+                        {
+                            "tab_name": "Html",
+                            "tab_id": "content",
+                            "content": [
+                                {
+                                    "image": "/images/project.png",
+                                    "title": "Name",
+                                    "technology":"Html, Bootstrap"
+                                   
+                                },
+                                {
+                                    "image": "/images/project.png",
+                                    "title": "Name",
+                                    "technology":"Html. Bootstrap"
+                                },
+                                {
+                                    "image": "/images/project.png",
+                                    "title": "Name",
+                                    "technology":"Html. Tailwind"
+                                    
+                                }
+                            ]
+                        },
+                        {
+                            "tab_name": "React",
+                            "tab_id": "content",
+                            "content": [
+                                {
+                                    "image": "/images/project.png",
+                                    "title": "Name",
+                                    "technology":"Next.js, Bootstrap"
+                                   
+                                },
+                                {
+                                    "image": "/images/project.png",
+                                    "title": "Name",
+                                    "technology":"Next.js, Bootstrap"
+                                },
+                                {
+                                    "image": "/images/project.png",
+                                    "title": "Name",
+                                    "technology":"Next.js, Tailwind"
+                                    
+                                }
+                            ]
+                        },
+                        {
+                            "tab_name": "Wordpress",
+                            "tab_id": "content",
+                            "content": [
+                                {
+                                    "image": "/images/project.png",
+                                    "title": "Name",
+                                    "technology":"Wordpress"
+                                   
+                                },
+                                {
+                                    "image": "/images/project.png",
+                                    "title": "Name",
+                                    "technology":"Wordpress"
+                                },
+                                {
+                                    "image": "/images/project.png",
+                                    "title": "Name",
+                                    "technology":"Wordpress"
+                                    
+                                }
+                            ]
+                        }
+                    
+                      
+                     
+                    ]
+                }
+            }
+           
+          
+        ]
+    },
+   
+   
+   
+    "contact": {
+        "widgets": [
+            {
+                "slug": "ContactUs",
+                "data": {}
+            },
+            {
+                "slug": "ContactHelp",
+                "data": {}
+            }
+        ]
+    },
+    "aboutus": {
+        "widgets": [
+            {
+                "slug": "AboutBanner",
+                "data": {
+                    "title": "Expect More"                   
+                }
+            },
+            {
+                "slug": "AboutChooseMe",
+                "data": {
+                    "title": "Blogs",
+                    "card":[
+                        {
+                            "title": "PROFESSIONAL",
+                            "description": "Building responsove website with modern technology.",
+                            "icon": "engineering"
+                        },
+                        {
+                            "title": "UNIQUE DESIGN",
+                            "description": "Creating website with unique styles",
+                            "icon": "tools"
+                        },
+                        {
+                            "title": "AFFORDABLE AND FLEXIABLE",
+                            "description": "Bring life to your website with affordable value",
+                            "icon": "credit-card"
+                        },
+                        {
+                            "title": "24/7 SUPPORT",
+                            "description": "Any time support for development and maintenence",
+                            "icon": "support_agent"
+                        }
+                    ],
+                    "cards": [
+                    
+                        {
+                            "title": "Web Development",
+                            "description": "Creating and maintaining websites or web applications. It involves a combination of programming, database management, and design skills",
+                            "icon": ""
+                        },
+                        {
+                            "title": "Responsive Design",
+                            "description": "Make web pages render well on a variety of devices and window or screen sizes. The key goal is to provide a seamless and optimal user experience, regardless of whether the user is accessing the website on a desktop computer, laptop, tablet, or smartphone",
+                            "icon": ""
+                        },
+                        {
+                            "title": "React js",
+                            "description": "React js for building user interfaces, especially for single-page applications where a smooth and dynamic user experience with minimum loading time.",
+                            "icon": ""
+                        },
+                        {
+                            "title": "Python",
+                            "description": "Building web applications quickly and efficiently using the Python Framework",
+                            "icon": ""
+                        }
+                    ]
+                }
+            },
+            {
+                "slug": "AboutSkills",
+                "data": {
+                    "title":"dsfdsf"
+                }
+                
+            },
+            {
+                "slug": "AboutMilestones",
+                "data": {
+                    "title": "Our Milestones",
+                    "experience": {
+                        "number": "25",
+                        "text": "Year's of Experience"
+                    },
+                    "content": [
+                        {
+                            "year": "1996",
+                            "description": "Kent Homes and Properties and launched first project, 'Kent Paradise'"
+                        },
+                        {
+                            "year": "1998",
+                            "description": "Handed over 1 Project."
+                        },
+                        {
+                            "year": "2004",
+                            "description": "Incorporated into a new company 'Kent Construction Pvt. Ltd.and launched Kent Nalukettu, Kerala's first traditional villa project."
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,73 @@
+@import "../../../styles/util";
+
+.feature_card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 30px 18px 4px 19px;
+    @include min(992) {
+        padding: size(63) size(47) size(25) size(47);
+    }
+    &_icon {
+        position: relative;
+        max-width: 90px;
+        width: 100%;
+        height: 84px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        @include min(1200) {
+            max-width: 110px;
+            width: 100%;
+            height: 104px;
+        }
+        margin-bottom: 25px;
+        img {
+            object-fit: contain;
+            object-position: left;
+        }
+    }
+
+    &_info {
+        flex: 1 0;
+        padding-bottom: 13px;
+        color: #fff;
+        text-align: center;
+        h4.year {
+            @include lineHeight(20, 26);
+            font-weight: 500;
+            font-size: 15px;
+            margin-bottom: 12px;
+            @include min(992) {
+                font-size: size(20);
+                margin-bottom: size(15);
+            }
+        }
+        h4.title {
+            @include lineHeight(20, 26);
+            font-weight: 500;
+            font-size: 18px;
+            margin-bottom: 12px;
+            @include min(992) {
+                font-size: size(18);
+                margin-bottom: size(20);
+            }
+        }
+
+        p {
+            @include lineHeight(16, 27);
+            font-size: 16px;
+            margin-bottom: 0;
+            font-weight: 400;
+            @include max(575.98){
+                max-width: 196px;
+                margin: auto;
+            }
+            @include min(992) {
+                font-size: size(16);
+            }
+        }
+    }
+}

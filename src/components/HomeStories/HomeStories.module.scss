@@ -1,0 +1,70 @@
+@import "../../styles/util";
+
+.story_sec {
+  background: #faf8f1;
+  padding: 50px 0 50px;
+
+  @include min(992) {
+    padding: size(100) 0 size(121);
+  }
+
+  :global(.row) {
+    @include min(992) {
+      --bs-gutter-x: 4.6111rem;
+    }
+  }
+
+  h2 {
+    margin-bottom: 0;
+  }
+}
+
+.head_wrap {
+  margin-bottom: 25px;
+  @include min(576) {
+    margin-bottom: size(30);
+  }
+  @include min(992) {
+    margin-bottom: size(50);
+  }
+}
+
+.nav_wrap {
+  .nav_pill_item {
+    --bs-nav-pills-link-active-color: #{$primary};
+    --bs-nav-pills-link-active-bg: transparent;
+  }
+  :global {
+    .nav-item {
+      &:last-child {
+        .nav-link {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  :global(.nav-link) {
+    --bs-link-color: rgb(0, 0, 0, 0.5);
+    --bs-nav-link-color: rgb(0, 0, 0, 0.5);
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    font-weight: 700;
+    @include min(1200) {
+      margin-right: size(33);
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  :global(.nav-link.active) {
+    border-bottom: 1.5px solid #{$primary};
+  }
+}
+.view_btn_wrap {
+  margin-top: 50px;
+  @include min(992) {
+    margin-top: size(70);
+  }
+}

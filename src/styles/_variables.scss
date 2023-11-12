@@ -1,0 +1,232 @@
+// colors
+$primary: #0C356A !default;
+$secondary: #89715b !default;
+$black: #000000 !default;
+$white: #ffffff !default;
+$bg-dark-grey: var(--bg-light-grey);
+$border-color:#E8E8E8;
+$bg-dark-green:#000;
+$bg-dark-green-secondary:#000;
+$border-light:rgba(#FFFFFF,.15);
+
+// $btn-dark: #333333 !default;
+// $section-dark: #1c1c1e !default;
+// $card-dark: #161617 !default;
+// $border-color: #808080 !default;
+// $text-color: var(--text-color) !default;
+// $text-color-grey: #989898 !default;
+// $text-color-grey-2: #8b8b8b !default;
+// $text-color-grey-3: #a3a3a3 !default;
+// $pale-violet: var(--pale-violet) !default;
+// $active-orange: var(--active-orange) !default;
+// $pale-blue: #aad9d8;
+// $warning-bg: var(--warning-bg);
+// $fill: var(--fill);
+// $fill-active: var(--fill-active);
+// $fill-color: var(--fill-color);
+// $fill-active-color: var(--fill-active-color);
+// $tab-color:var(--card-border-color);
+// $nav-item-color:var(--nav-item-color);
+
+// $fill-color-100: var(--fill-color-100);
+
+// Fonts
+$primary-font: var(--am-text-font-family);
+$secondary-font: var(--am-title-font-family);
+$font-size-root: 18px !default;
+// $base-size: 16;
+
+// Font Weight
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+
+
+$font-weights: (
+  "light": $font-light,
+  "regular": $font-regular,
+  "medium": $font-medium,
+  "semibold": $font-semibold,
+  "bold": $font-bold,
+);
+
+// // breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1391px,
+);
+
+// // bootstrap reset variables
+// $primary: $primary-color !default;
+// $light: $white !default;
+// $dark: $btn-dark !default;
+
+// $headings-font-weight: $font-medium !default;
+
+// $variable-prefix: am- !default;
+
+// $btn-padding-y: 18px !default;
+// $btn-padding-x: 22px !default;
+// $btn-font-weight: $font-medium !default;
+// $btn-line-height: 1 !default;
+// $btn-border-radius: 30px !default;
+
+// $modal-backdrop-bg: #00000099 !default;
+
+$enable-caret: false !default;
+$enable-rounded: false !default;
+$enable-shadows: false !default;
+$enable-gradients: false !default;
+$enable-transitions: true !default;
+$enable-reduced-motion: true !default;
+$enable-smooth-scroll: true !default;
+$enable-grid-classes: true !default;
+$enable-container-classes: true !default;
+$enable-cssgrid: false !default;
+$enable-button-pointers: true !default;
+$enable-rfs: false !default;
+$enable-validation-icons: false !default;
+$enable-negative-margins: false !default;
+$enable-deprecation-messages: true !default;
+$enable-important-utilities: true !default;
+
+// spacings
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+) !default;
+
+// // headings
+$p-sizes: (
+  1: (
+    null: 40,
+    992: 45,
+    1200: 64,
+    1600: 75,
+  ),
+  2: (
+    "null": 30,
+    992: 34,
+    1200: 40,
+    1600: 55,
+  ),
+  3: (
+    null: 30,
+    992: 35,
+    1200: 45,
+  ),
+  4: (
+    null: 24,
+    992: 30,
+    1200: 40,
+  ),
+  5: (
+    null: 18,
+    768: 24,
+    1200: 30,
+  ),
+ 20: (
+    null: 16,
+    992: 18,
+  ),
+);
+
+// // paragraphs
+$ttl-sizes: (
+  16: (
+    null: 16,
+  ),
+  18: (
+    null: 14,
+    768: 15,
+    1200: 18,
+  ),
+  20: (
+    null: 18,
+    992: 18,
+    1600: 20,
+  ),
+  22: (
+    null: 20,
+    1200: 22,
+  ),
+  24: (
+    null: 18,
+    992: 24,
+  ),
+  30: (
+    null: 20,
+    992: 30,
+  ),
+  35: (
+    null: 25,
+    992: 35,
+  ),
+  45: (
+    null: 25,
+    992: 45,
+  ),
+
+  40: (
+    null: 30,
+    992: 40,
+  ),
+  50: (
+    null: 35,
+    1200: 50,
+  ),
+  55: (
+    null: 25,
+    992:35,
+    1200:45,
+    1600: 55,
+  ),
+  60: (
+    null: 32,
+    992: 60,
+  ),
+  64: (
+    null: 36,
+    992: 64,
+  ),
+  75: (
+    null: 36,
+    992: 45,
+    1200:60,
+    1600:75,
+  ),
+);
+
+// stacking context
+// $z-header: 1050;
+
+
+// $form-floating-height:61px;
+
+
+// bootstrap Table variables
+
+// $table-cell-padding-y:        1.9375rem !default;
+// $table-cell-padding-x:        .2rem !default;
+// $table-cell-padding-y-sm:     .25rem !default;
+// $table-cell-padding-x-sm:     .25rem !default;
+

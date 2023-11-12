@@ -1,0 +1,75 @@
+@import "../../../../styles/util";
+
+.footer {
+  background-color: $primary;
+  padding: 60px 0 35px 0;
+
+  @include min(992) {
+    padding: size(108) 0 size(0) 0;
+  }
+  
+  :global(.container) {
+    position: relative;
+  }
+  .title{
+    color: #fff;
+    opacity: .6;
+  }
+  .privacy_wrap {
+    @include min(992) {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+    p,
+    a {
+      @include min-max(992, 1199.98) {
+        font-size: 13px;
+      }
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.39);
+      text-decoration: none;
+      letter-spacing: 0.02rem;
+      transition: 0.4s ease-in-out;
+    }
+
+    a {
+      @include min(1200) {
+        &:hover {
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+    }
+    p {
+      @include min(992) {
+        margin-bottom: size(45);
+      }
+    }
+    @include max(991.98) {
+      p.copyright {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .footer_top{
+    text-align: center;
+   padding-bottom: 50px;
+    a{
+      color: var(--primary);
+      font-size: 18px;
+      font-weight: 600;
+      font-family: var(--bs-second-font-family);
+      transition: all .3s ease-in-out;
+      &:hover{
+      
+        color: $white;
+      }
+      @include min(992){
+      font-size: 50px;
+      }
+    }
+  }
+
+
+}
+

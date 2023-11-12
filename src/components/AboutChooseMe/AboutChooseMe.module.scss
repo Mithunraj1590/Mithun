@@ -1,0 +1,64 @@
+@import "../../styles/util";
+
+.kent_blog_sec {
+  padding: 50px 0 50px;
+  transition-delay: var(--anim-index);
+  @include min(992) {
+    padding: size(110) 0 size(108) 0;
+  }
+//   :global(.swiper-slide) {
+//     @include min(992) {
+//       opacity: 0;
+//       transition: all 0.4s;
+//     }
+//   }
+
+//   &:global(.visible) {
+//     :global {
+//       .swiper-slide {
+//         &:nth-child(1) {
+//           opacity: 1;
+//           transition-delay: 0.54s;
+//         }
+//         &:nth-child(2) {
+//           opacity: 1;
+//           transition-delay: 0.7s;
+//         }
+
+//         &:nth-child(3) {
+//           opacity: 1;
+//           transition-delay: 0.9s;
+//         }
+//       }
+//     }
+//   }
+
+  :global(.row) {
+    @include min(992) {
+      --bs-gutter-x: 4.6111rem;
+    }
+  }
+
+ 
+}
+
+.head_wrap {
+  margin-bottom: 20px;
+  @include min(576) {
+    margin-bottom: size(32);
+  }
+  @include min(992) {
+    margin-bottom: size(52);
+  }
+}
+
+.skill_wrap{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  row-gap: 40px;
+}
+
+
+
