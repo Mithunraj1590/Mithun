@@ -1,43 +1,41 @@
-import ComponentFunc from "../src/components"
-import { getPageContent } from "../lib/pages";
+import ComponentFunc from "../src/components";
+const db = require("./../db.json");
 
 const Slug = (props) => {
   return (
-   <div>
-     {props && (
-          <>{props?.data?.widgets?.map((block) => ComponentFunc(block))}</>
+    <div>
+      {props && (
+        <>{props?.data?.widgets?.map((block) => ComponentFunc(block))}</>
       )}
-   </div>
-  )
-}
+    </div>
+  );
+};
 
 export async function getStaticPaths() {
   return {
-    paths: [
-      { params: { slug: ["detailpage"] } },
-    ],
+    paths: [],
     fallback: "blocking",
   };
 }
 
-export async function getStaticProps({params}) {
-    try {
-      let route = params.slug.join("/");
-      const pageContent = await getPageContent(route);
-      console.log(pageContent, "page data")
-      return {
-        props: {
-          data: pageContent,
-        },
-        revalidate: 300,
-      };
-    } catch (error) {
-      return {
-        props: {
-          apiError: true,
-        },
-      };
-    }
-  }
+export async function getStaticProps({ params }) {
+  try {
+    let route = params.slug.join("/");
+    const pageContent = db[route];
 
-export default Slug
+    return {
+      props: {
+        data: pageContent,
+      },
+      revalidate: 300,
+    };
+  } catch (error) {
+    return {
+      props: {
+        apiError: true,
+      },
+    };
+  }
+}
+
+export default Slug;

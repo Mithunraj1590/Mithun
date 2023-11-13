@@ -1,5 +1,5 @@
 {
-  "name": "react next bolierplate",
+  "name": "WAC 13 next bolierplate",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "component": "node script.js",
-    "server": "json-server --host localhost db.json -p 4000"
+    "component": "node script.js"
   },
   "dependencies": {
     "@next/font": "^13.0.6",

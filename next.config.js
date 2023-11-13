@@ -11,7 +11,7 @@ const nextConfig = {
     domains: [],
   },
   env: {
-    BASE_URL: "http://localhost:4000/",
+    // BASE_URL: "http://localhost:4000/",
     // BASE_URL: "http://localhost:4000/",
   },
   experimental: {

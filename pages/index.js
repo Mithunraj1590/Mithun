@@ -1,23 +1,20 @@
-import ComponentFunc from "../src/components"
-import { getPageContent } from "../lib/pages";
-
+import ComponentFunc from "../src/components";
+const db = require("./../db.json");
 const HomePage = (props) => {
   return (
-   <div>
-     {props && (
-          <>{props?.data?.widgets?.map((block) => ComponentFunc(block))}</>
+    <div>
+      {props && (
+        <>{props?.data?.widgets?.map((block) => ComponentFunc(block))}</>
       )}
-   </div>
-  )
-}
+    </div>
+  );
+};
 
 export async function getStaticProps() {
   try {
-    
-    const pageContent = await getPageContent("home");
-    console.log(pageContent, "page data")
+    const pageContent = db["home"];
     return {
-      props: { 
+      props: {
         data: pageContent,
       },
       revalidate: 300,
@@ -30,24 +27,4 @@ export async function getStaticProps() {
     };
   }
 }
-
-
-// export async function getStaticProps() {
-//     try {
-//       const pageContent = data
-//       return {
-//         props: { 
-//           data: pageContent,
-//         },
-//         revalidate: 300,
-//       };
-//     } catch (error) {
-//       return {
-//         props: {
-//           apiError: true,
-//         },
-//       };
-//     }
-//   }
-
-export default HomePage
+export default HomePage;
