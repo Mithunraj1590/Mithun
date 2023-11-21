@@ -1,7 +1,5 @@
 import Style from "./NewProjectCard.module.scss";
-import Assets from "../../Layout/CommonLayout/assets";
 import Link from "next/link";
-import Icon from "../../Layout/Icons";
 import Image from "next/image";
 import { useWindowSize } from "../../../logic/useDimension";
 import Animate from "../../Animate";

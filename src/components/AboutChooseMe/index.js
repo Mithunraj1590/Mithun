@@ -3,7 +3,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import Style from "./AboutChooseMe.module.scss";
 import Animate from "../Animate";
-import SkillCard from "../utils/Skillcard";
+import SkillCards from "../utils/SkillCards";
 
 
 const AboutChooseMe = ({ props }) => {
@@ -24,7 +24,7 @@ const AboutChooseMe = ({ props }) => {
                 console.log(data,"console");
                 return(
                   
-                  <SkillCard props={data} key={i}></SkillCard>
+                  <SkillCards props={data} key={i}></SkillCards>
                  
                 )
                })}
