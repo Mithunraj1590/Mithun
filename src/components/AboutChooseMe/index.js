@@ -2,7 +2,7 @@ import { useRef } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import Style from "./AboutChooseMe.module.scss";
-import Animate from "../Animate/Animate";
+import Animate from "../Animate";
 import SkillCard from "../utils/Skillcard";
 
 const AboutChooseMe = ({ props }) => {

@@ -13,7 +13,8 @@ import Assets from "../Layout/CommonLayout/assets";
 
 import SwiperCore, { Navigation, Autoplay } from "swiper";
 import Icon from "../Layout/Icons";
-import Animate from "../Animate/Animate";
+import Animate from "../Animate";
+
 
 const AboutMilestones = ({ props }) => {
     SwiperCore.use([Navigation]);

@@ -8,7 +8,7 @@ import Style from "./HomeAllProjects.module.scss";
 import Icon from "../Layout/Icons";
 import Link from "next/link";
 import { useWindowSize } from "../../logic/useDimension";
-import Animate from "../Animate/Animate";
+import Animate from "../Animate";
 
 const HomeAllProjects = ({ props }) => {
   const { width } = useWindowSize();

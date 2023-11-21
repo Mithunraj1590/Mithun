@@ -9,7 +9,7 @@ import Icon from "../Layout/Icons";
 import Link from "next/link";
 import { useWindowSize } from "../../logic/useDimension";
 import ButtonAnim from "../utils/ButtonAnim";
-import Animate from "../Animate/Animate";
+import Animate from "../Animate";
 import TestimonialTextCard from "../utils/TestimonialTextCard";
 
 
