@@ -4,7 +4,7 @@ import Link from "next/link";
 import Icon from "../../Layout/Icons";
 import Image from "next/image";
 import { useWindowSize } from "../../../logic/useDimension";
-import Animate from "../../Animate/Animate";
+import Animate from "../../Animate";
 
 const NewProjectCard = ({ props }) => {
   const parse = require("html-react-parser");

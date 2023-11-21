@@ -5,6 +5,7 @@ import Style from "./AboutChooseMe.module.scss";
 import Animate from "../Animate";
 import SkillCard from "../utils/Skillcard";
 
+
 const AboutChooseMe = ({ props }) => {
 
   return (
