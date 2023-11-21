@@ -1,5 +1,5 @@
 import React from 'react';
-import Styles from "./SkillCard.module.scss"
+import Styles from "./SkillCards.module.scss"
 import Image from 'next/image';
 import Icon from '../../Layout/Icons';
 
