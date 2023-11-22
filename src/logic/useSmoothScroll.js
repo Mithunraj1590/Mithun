@@ -1,42 +1,27 @@
 import React, { useLayoutEffect } from "react";
 import Lenis from "@studio-freight/lenis";
 
-
 const useSmoothScroll = () => {
-    let lenis = "";
     useLayoutEffect(() => {
-        lenis = new Lenis({
-            //       duration: 1.2,
-            //       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-            //       direction: "vertical",
-            //       gestureDirection: "vertical",
-            //       smooth: true,
-            //       smoothTouch: false, 
-            //       touchMultiplier: 2,
-            //       infinite: false,
-            speed: 800,
-            offset: 50,
-            duration: 2,
-            easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -20 * t)),
-            direction: "vertical",
-            gestureDirection: "vertical",
-            smooth: true,
-            smoothTouch: true,
-            touchMultiplier: 2,
-            infinite: false,
-        });
+        // Check if the screen width is greater than 768 pixels (adjust as needed)
+        const isDesktop = window.innerWidth > 992;
 
-        function raf(time) {
-            lenis.raf(time);
+        if (isDesktop) {
+            const lenis = new Lenis({
+                // ... (your configurations for desktop)
+            });
+
+            function raf(time) {
+                lenis.raf(time);
+                requestAnimationFrame(raf);
+            }
+
             requestAnimationFrame(raf);
+
+            // Expose lenis if needed outside the hook
+            window.lenis = lenis;
         }
-
-        requestAnimationFrame(raf);
-
-        requestAnimationFrame(raf);
-        window.lenis = lenis;
     }, []);
 };
 
 export default useSmoothScroll;
-

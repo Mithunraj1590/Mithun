@@ -15,7 +15,7 @@ const HomeAbout = ({ props }) => {
       <Animate as="section" className={Style.home_about_sec} >
         <div className="container">
 
-          {width >= 992 ? "" : <Animate as="h2" className={`fade_in h2 fw-500 ${Style.title}`}>About Myself</Animate>}
+          {width >= 992 ? "" : <Animate as="h2" className={` h2 fw-500 ${Style.title}`}>About Myself</Animate>}
           <div className="row">
             {width >= 992 ?
               <div className="col-lg-6">
@@ -33,7 +33,7 @@ const HomeAbout = ({ props }) => {
               <div className={Style.content_wrap}>
                 <div className={Style.content_head} >
                   {width >= 992 ? <h2 className="h2 fw-700" >About Myself</h2> : ""}
-                  <Animate as="p" className="fade_in">
+                  <Animate as="p" className="">
                     B.E Computer science
                     student with a self starter
                     attitude and experienced in
