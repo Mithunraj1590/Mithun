@@ -77,45 +77,8 @@
                         }
                     ]
                 }
-            },
-            {
-                "slug": "HomeStories",
-                "data": {
-                    "title": "Testimonial",
-                    "stories": [
-                        {
-                            "img": "/images/person.jpg",
-                            "name": "mithun",
-                            "position":"ui",
-                            "description": "As a responsible business, we seek to transform communities"
-                        },
-                        {
-                            "img": "/images/person.jpg",
-                            "name": "mithun",
-                            "position":"ui",
-                            "description": "As a responsible business, we seek to transform communities"
-                        },
-                        {
-                            "img": "/images/person.jpg",
-                            "name": "mithun",
-                            "position":"ui",
-                            "description": "As a responsible business, we seek to transform communities"
-                        },
-                        {
-                            "img": "/images/person.jpg",
-                            "name": "mithun",
-                            "position":"ui",
-                            "description": "As a responsible business, we seek to transform communities"
-                        },
-                        {
-                            "img": "/images/person.jpg",
-                            "name": "mithun",
-                            "position":"ui",
-                            "description": "As a responsible business, we seek to transform communities"
-                        }
-                    ]
-                }
             }
+            
         ]
     },
     "project-list": {
