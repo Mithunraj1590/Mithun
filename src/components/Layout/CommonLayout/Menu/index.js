@@ -19,6 +19,7 @@ const Menu = ({ props }) => {
   const [slimHeader, setSlimHeader] = useState(false);
   const [loadHeader, setloadHeader] = useState(false);
   const [activeIndex, setActiveIndex] = useState(null);
+  const [offcanvasShow, setOffcanvasShow] = useState(false);
   // const [visible, setVisible] = useState(false);
   const getPathName = useRouter();
   const isprojectClass = (getPathName.asPath == '/project-list');
@@ -92,7 +93,9 @@ const Menu = ({ props }) => {
                 </div>
               </div>
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`}>
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`}
+             onClick={() => setOffcanvasShow(!offcanvasShow)}
+             >
               <span></span>
               <span></span>
               <span></span>
@@ -101,6 +104,8 @@ const Menu = ({ props }) => {
               id={`offcanvasNavbar-expand-lg`}
               aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
               placement="end"
+              show={offcanvasShow}
+              onHide={() => setOffcanvasShow(false)}
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
