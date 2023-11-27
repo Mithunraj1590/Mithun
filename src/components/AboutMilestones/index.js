@@ -4,6 +4,7 @@ import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import { useWindowSize } from "../../logic/useDimension";
 // import required modules
@@ -11,7 +12,7 @@ import { useWindowSize } from "../../logic/useDimension";
 import Image from "next/image";
 import Assets from "../Layout/CommonLayout/assets";
 
-import SwiperCore, { Navigation, Autoplay } from "swiper";
+import SwiperCore, { Navigation } from "swiper";
 import Icon from "../Layout/Icons";
 import Animate from "../Animate";
 

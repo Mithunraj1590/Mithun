@@ -21,7 +21,7 @@ const AboutChooseMe = ({ props }) => {
               <div className={`position-relative ${Style.skill_wrap}`} >
                
                {props?.data?.card?.map((data,i)=>{
-                console.log(data,"console");
+              
                 return(
                   
                   <SkillCards props={data} key={i}></SkillCards>
