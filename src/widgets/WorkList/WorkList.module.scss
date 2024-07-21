@@ -1,0 +1,72 @@
+.worklist{
+    position: relative;;
+    :global{
+        .css-b62m3t-container{
+            max-width: 300px;
+            margin-left: auto;
+            position: relative;
+            z-index: 5;
+        }
+        .selected{
+            &__control{
+                cursor: pointer;
+                border: none;
+                background-color: transparent;
+                outline: none!important;
+                box-shadow: none!important;
+                border: 1px solid #fff;
+                height: 50px;
+                color: #fff;
+                border-radius: 0;
+                &:hover{
+                    border: 1px solid #fff;  
+                }
+            }
+            &__control--is-focused,
+            &__control--menu-is-open{
+                background-color: transparent;
+                outline: none!important;
+                box-shadow: none!important;
+                border: 1px solid #fff;
+            }
+            &__placeholder{
+                color: #fff;
+            }
+            &__single-value {
+                color: #fff;
+            }
+            &__input{
+                color: #fff;
+            }
+            &__indicator-separator{
+                display: none;
+            }
+            &__menu{
+                z-index: 111;
+                border-radius: 0;
+            }
+            &__menu-list{
+                padding: 0;
+            }
+            &__option{
+                color: #000;
+                cursor: pointer;
+            }
+            &__option--is-focused
+           {
+                background-color: #074173df;
+                color: #fff;
+            }
+            &__option--is-selected{
+                background-color: #074173;
+                color: #fff;
+            }
+        }
+    }
+}
+.project_card{
+    &:nth-child(4n+2),
+    &:nth-child(4n+3){
+        grid-column: span 2 / auto;
+    }
+}

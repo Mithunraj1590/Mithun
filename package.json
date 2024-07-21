@@ -1,0 +1,33 @@
+{
+  "name": "tw-next14-workflow",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "nodemon": "nodemon ./server.js localhost 8080"
+  },
+  "dependencies": {
+    "html-react-parser": "^5.1.10",
+    "next": "14.0.4",
+    "next-pwa": "^5.6.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-select": "^5.8.0",
+    "sass": "^1.69.7"
+  },
+  "devDependencies": {
+    "@studio-freight/react-lenis": "^0.0.38",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0",
+    "postcss": "^8",
+    "react-icomoon": "^2.5.7",
+    "react-intersection-observer": "^9.5.2",
+    "tailwindcss": "^3.3.0"
+  }
+}

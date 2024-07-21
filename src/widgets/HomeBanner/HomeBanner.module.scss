@@ -1,0 +1,27 @@
+@import "@/styles/mixins";
+
+.home_banner{
+    .title{
+        bottom: 0;
+        padding-bottom: 20px;
+        @include max(1199){
+            top: 50%;
+            transform: translateY(-50%);
+            padding-bottom: 0;
+            bottom: auto;
+        }
+    }
+    h1{
+        line-height: .85;
+        span{
+            display: inline-block;
+            line-height: .85;
+            padding-bottom: 15px;
+            &+span{
+                @include min(768){
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}
