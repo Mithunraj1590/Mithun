@@ -1,24 +1,24 @@
 import { readFileSync } from 'fs';
 import { join } from 'path';
 
-export default function handler(req, res) {
-  const { slug } = req.query;
+export async function GET(req, { params }) {
+  const { slug } = params;
 
   if (!slug) {
-    return res.status(404).send('Not found');
+    return new Response('Not found', { status: 404 });
   }
 
   try {
-    // Assuming your static data is in the "public" directory or accessible at build time
     const dbPath = join(process.cwd(), 'src/api/staticData/db.json');
     const dbJson = JSON.parse(readFileSync(dbPath, 'utf-8'));
 
-    if (dbJson.hasOwnProperty(slug)) {
-      return res.status(200).json(dbJson[slug]);
+    if (dbJson.homepage.data.widgets.some(widget => widget.data.title === slug)) {
+      return new Response(JSON.stringify(dbJson.homepage.data.widgets.find(widget => widget.data.title === slug)), { status: 200 });
     } else {
-      return res.status(404).send('Not found');
+      return new Response('Not found', { status: 404 });
     }
   } catch (error) {
-    return res.status(500).send('Internal server error');
+    console.error("Error:", error);
+    return new Response('Internal Server Error', { status: 500 });
   }
 }
