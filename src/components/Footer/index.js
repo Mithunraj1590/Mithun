@@ -13,7 +13,7 @@ const Footer = () => {
               <div className="mb-[50px] md:mb-[70px] xl:mb-[100px] flex justify-between flex-wrap">
                 <div className="w-full md:max-w-[60%] lg xxl:max-w-[38%] order-2 md:order-1">
                 <h2 className="ttl max-w-[60%]  md:max-w-max text-[40px] md:text-[80px] lg:text-[115px] xl:text-h2 leading-[1] font-medium mb-4 md:mb-6 xl:mb-8">CONNECT & COLLAB</h2>
-                <p className="para text-[18px]">I'm always open to new opportunities and connections. Whether you have a project you'd like to discuss, want to share your work, or just say hi — please don't hesitate to reach out.</p>
+                <p className="para text-[18px]">I&apos;m always open to new opportunities and connections. Whether you have a project you&apos;d like to discuss&#39; want to share your work&#39; or just say hi — please don&apos;t hesitate to reach out.</p>
                 <Link href="" className="btn btn-primary btn-icon hover-translate max-w-max mt-[20px] md:mt-[35px] xl:mt-[40px]">
                   CONTACT
                   <span className="icon">
