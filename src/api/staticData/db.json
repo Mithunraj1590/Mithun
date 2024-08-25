@@ -3,8 +3,8 @@
     "data": {
       "seo": {
         "id": 5,
-        "metaTitle": "Excelledia - is a prominent business process",
-        "metaDescription": "Excelledia is a prominent business process improvement and performance management consulting firm that helps businesses become more profitable.",
+        "metaTitle": "Mithun raj",
+        "metaDescription": "This is my personal portfolio site",
         "metaOgImage": "",
         "keywords": null,
         "metaRobots": null,
@@ -24,7 +24,7 @@
         {
           "widget_type": "HomeBanner",
           "data": {
-            "title": "<span>FRONTEND</span><span>DEVELOPER</span>",
+            "title": "FRONTEND DEVELOPER",
             "bannerslides": [
               {
                 "image_desktop": {
@@ -257,8 +257,17 @@
                   "image":"/images/skills/Html5_logo.svg"
                 },
                 {
-                  "name":"WORDPRESS",
-                   "image":"/images/skills/Wordpress_logo.svg"
+                  "name":"CSS",
+                   "image":"/images/skills/cSS_logo.svg"
+                },
+                {
+                  "name":"JAVASCRIPT",
+                   "image":"/images/skills/Javascript_logo.svg"
+                },
+               
+                {
+                  "name":"TYPESCRIPT",
+                   "image":"/images/skills/Typescript_logo.svg"
                 },
                 {
                   "name":"REACT",
@@ -283,6 +292,14 @@
                 {
                   "name":"TAILWIND",
                    "image":"/images/skills/Tailwind_logo.svg"
+                },
+                {
+                  "name":"SASS",
+                   "image":"/images/skills/Sass_logo.svg"
+                },
+                {
+                  "name":"WORDPRESS",
+                   "image":"/images/skills/Wordpress_logo.svg"
                 }
             ]
           }

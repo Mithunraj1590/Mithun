@@ -10,6 +10,11 @@
         overflow: hidden;
         img{
             object-fit: cover;
+            // clip-path: inset(100% 0% 0% 0%);
+            transition: clip-path .7s  cubic-bezier(0.77,0,0.175,1);
+        }
+        .reveal{
+            clip-path: inset(0% 0% 0% 0%);
         }
     }
 }

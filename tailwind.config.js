@@ -91,7 +91,8 @@ const fontWeight = {
 };
 
 const fontFamily = {
-  jet: "var(--font-secondary)"
+  jet: "var(--font-secondary)",
+  bai:"var(--font-third)",
 
 };
 

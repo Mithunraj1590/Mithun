@@ -1,12 +1,29 @@
+"use client"
 import StackCard from '@/components/StackCard'
 import Icons from '@/styles/Icons'
+import FadeAnim from '@/utilities/FadeAnim'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 import Link from 'next/link'
-import React from 'react'
+import React, { useRef } from 'react'
 
 const HomeAbout = (props) => {
+    const section = useRef(null);
+    useGSAP(() => {
+        gsap.to(
+            section.current, 
+          { 
+            opacity: 1, 
+            y: 0, 
+            duration: .5, 
+            stagger: 0.1
+          }
+        );
+      });
     return (
-        <section className='py-[50px] md:py-[70px] xl:py-[140px]'>
-            <div className="container">
+        <section ref={section} className='py-[50px] md:py-[70px] xl:py-[140px] opacity-0'>
+            <FadeAnim>
+            <div className="container fade-elem ">
                 <div className="flex flex-wrap gap-y-[50px] text-white">
                     <div className='w-full lg:flex-[40%]'>
                         <div className='w-full lg:max-w-[80%]'>
@@ -34,6 +51,7 @@ const HomeAbout = (props) => {
                
                 </div>
             </div>
+            </FadeAnim>
         </section>
     )
 }

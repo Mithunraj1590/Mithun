@@ -1,10 +1,12 @@
+import FadeAnim from '@/utilities/FadeAnim'
 import Link from 'next/link'
 import React from 'react'
 
 const AboutJourney = (props) => {
   return (
     <section>
-        <div className="container">
+        <FadeAnim>
+        <div className="container fade-elem">
         <div className={`bg-dark_gray p-[40px] px-[60px] rounded-[40px]`}>
                 <div className='grid grid-cols-2'>
                     <div className='text-white'>
@@ -28,6 +30,7 @@ const AboutJourney = (props) => {
                 </div>
                 </div>
         </div>
+        </FadeAnim>
     </section>
   )
 }

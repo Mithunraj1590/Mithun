@@ -1,11 +1,15 @@
+"use client"
 import Image from 'next/image'
 import Style from "./AboutBanner.module.scss"
-import React from 'react'
+import React, { useRef } from 'react'
 import Link from 'next/link'
 import Icons from '@/styles/Icons'
 
 
+
 const AboutBanner = (data) => { 
+  const imgRef = useRef();
+
   return (
     <section className={`${Style.about_banner} mt-[50px] py-[100px]`}>
        <div className=' w-full'>
@@ -13,7 +17,9 @@ const AboutBanner = (data) => {
             <div className="grid grid-cols-2 items-center">
                 <div className='w-[450px]'>
                     <figure className={`${Style.figure}`}>
-                        <Image src={data?.data?.image} fill alt="about-img"></Image>
+                        <Image
+                        className=""
+                        src={data?.data?.image} fill alt="about-img"></Image>
                     </figure>
                 </div>
                 <div className='text-white'>

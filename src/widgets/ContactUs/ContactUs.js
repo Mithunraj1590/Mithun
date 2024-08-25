@@ -1,14 +1,16 @@
 import React from 'react'
 import Style from "./ContactUs.module.scss"
 import Link from 'next/link'
+import FadeAnim from '@/utilities/FadeAnim'
 
 const ContactUs = (data) => {
     return (
         <section className='py-[100px] pt-[200px] h-screen flex items-center'>
-            <div className="container">
+            <FadeAnim>
+            <div className="container fade-elem">
                 <div className="grid grid-cols-2 gap-5">
                     <div>
-                        <h2 className='text-white ttl text-[80px] leading-[.9] mb-[70px]'>{data?.data?.title}</h2>
+                        <h2 className='text-white ttl text-[85px] leading-[.9] mb-[70px]'>{data?.data?.title}</h2>
                         <p className='text-white'>Mail : <Link href={`mailto:${data?.data?.email}`} className='hover:border-b'>{data?.data?.email}</Link> </p>w
                         <p className='text-white'>Tel : <Link href={`tel:${data?.data?.mobile}`} className='hover:border-b'>{data?.data?.mobile}</Link> </p>
                     </div>
@@ -60,6 +62,7 @@ const ContactUs = (data) => {
                     </div>
                 </div>
             </div>
+            </FadeAnim>
         </section>
     )
 }

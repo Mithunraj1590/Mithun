@@ -1,9 +1,11 @@
+import FadeAnim from '@/utilities/FadeAnim'
 import React from 'react'
 
 const HomeHire = (props) => {
     return (
         <section className='pb-[100px] pt-[50px]'>
-            <div className="container">
+            <FadeAnim>
+            <div className="container fade-elem">
                 <div className={`bg-dark_gray p-[40px] px-[60px] rounded-[40px]`}>
                 <div className='grid grid-cols-2'>
                     <div className='text-white'>
@@ -23,6 +25,7 @@ const HomeHire = (props) => {
                 </div>
                 </div>
             </div>
+            </FadeAnim>
         </section>
     )
 }
