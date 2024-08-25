@@ -1,0 +1,15 @@
+@import "@/styles/mixins";
+
+.fade {
+    margin: auto;
+    @include min(1200) {
+        :global {
+            .fade-elem {
+                opacity: 0;
+                transform: translateY(25px) translateZ(0) perspective(1px);
+                will-change: transform, opacity;
+                backface-visibility: hidden
+            }
+        }
+    }
+}
