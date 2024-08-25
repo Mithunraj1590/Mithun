@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev":  "concurrently \"next dev\" \"nodemon ./server.js https://mithun-omega.vercel.app 8080\"",
+    "dev":  "concurrently \"next dev\" \"nodemon ./server.js https://mithun-chi.vercel.app 8080\"",
     "build": "next build",
-    "start": "concurrently \"next start\" \"nodemon ./server.js https://mithun-omega.vercel.app 8080\"",
+    "start": "concurrently \"next start\" \"nodemon ./server.js https://mithun-chi.vercel.app 8080\"",
     "lint": "next lint"
   },
   "dependencies": {
