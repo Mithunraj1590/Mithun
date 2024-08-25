@@ -3,11 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev":  "concurrently \"next dev\" \"nodemon ./server.js https://mithun-omega.vercel.app 8080\"",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "nodemon": "nodemon ./server.js localhost 8080"
+    "start": "concurrently \"next start\" \"nodemon ./server.js https://mithun-omega.vercel.app 8080\"",
+    "lint": "next lint"
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",
@@ -34,6 +33,7 @@
     "postcss": "^8",
     "react-icomoon": "^2.5.7",
     "react-intersection-observer": "^9.5.2",
-    "tailwindcss": "^3.3.0"
+    "tailwindcss": "^3.3.0",
+    "concurrently": "^8.2.0"
   }
 }
