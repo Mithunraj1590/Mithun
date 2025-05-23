@@ -16,7 +16,7 @@ const WorkList = (data) => {
                         {data?.data?.title}
                     </h2>
                 </div>
-                <div className="grid grid-cols-2 text-white mb-[150px] z-20 relative fade-elem">
+                <div className="grid grid-cols-1 lg:grid-cols-2 text-white mb-[50px] lg:mb-[150px] z-20 relative fade-elem">
                     <div>
 
                         <p className='text-[22px] para'>{data?.data?.description}</p>
@@ -30,9 +30,8 @@ const WorkList = (data) => {
                         />
                     </div>
                 </div>
-                <div className='grid grid-cols-3 gap-[20px] relative z-10'>
+                <div className='grid grid-cols-1 lg:grid-cols-3 gap-y-[20px] lg:gap-[20px] relative z-10'>
                     {data?.data?.works?.map((data, i) => {
-                        console.log(data, "wwwsss");
                         return (
                             <div className={`${Style.project_card} fade-elem`} key={i}>
                                 <ProjectCard props={data} />

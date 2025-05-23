@@ -1,4 +1,8 @@
+@import "@/styles/mixins";
 .contact_form{
+    @include max(991){
+        margin-top: 50px;
+    }
     input,textarea{
        background-color: #21201f!important;
     }

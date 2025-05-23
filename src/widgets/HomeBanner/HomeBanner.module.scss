@@ -1,6 +1,8 @@
 @import "@/styles/mixins";
 
 .home_banner{
+    width: 100%;
+    overflow: hidden;
     .title{
         bottom: 0;
         padding-bottom: 20px;
@@ -9,6 +11,10 @@
             transform: translateY(-50%);
             padding-bottom: 0;
             bottom: auto;
+        }
+         @include max(576){
+           top: auto;
+           bottom: 10px;
         }
     }
     .banner_tube{

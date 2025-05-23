@@ -17,7 +17,7 @@ const HomeBanner = (props) => {
       { 
         opacity: 1, 
         y: 0, 
-        duration: .5, 
+        duration: 1, 
         stagger: 0.1
       }
     );

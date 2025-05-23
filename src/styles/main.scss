@@ -10,7 +10,7 @@ $base-size:16;
     --btn-primary:#074173;
     // --btn-secondary:"",
     --mid-gray: #4c4a46;
-    --dark-gray: #21201f;
+    --dark-gray: #272625;
     --white:#fff;
     --text-xs:#{size(14)};
     --text-sm:#{size(16)};
@@ -263,3 +263,12 @@ html.lenis {
         display: block;
     }
   }
+
+  .perspective-1000 {
+  perspective: 1000px;
+}
+
+main{
+    position: relative;
+    z-index: 22;
+}

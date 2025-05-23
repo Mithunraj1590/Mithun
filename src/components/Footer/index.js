@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Style from "./Footer.module.scss"
 import Icons from "@/styles/Icons";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -22,13 +23,15 @@ const Footer = () => {
                 </Link>
                 </div>
                 <div className="order-1 md:order-2">
-                  <Link href="">LOGO</Link>
+                  <Link href="/" className={`${Style.logo}`}>
+               <Image src="/images/logo-b.png" fill alt="logo" />
+                  </Link>
                 </div>
               </div>
-              <div className="flex flex-wrap gap-y-6 w-full text-center justify-between font-jet text-xs items-center">
-                <Link href="/" className="mx-2 underline underline-offset-8 decoration-[1.5px]">LINKEDIN</Link>
-                <Link href="/" className="mx-2 underline underline-offset-8 decoration-[1.5px]">FACEBOOK</Link>
-                <Link href="/" className="mx-2 underline underline-offset-8 decoration-[1.5px]">INSTAGRAM</Link>
+              <div className="flex flex-wrap gap-y-8 w-full text-center justify-between font-jet text-xs items-center">
+                <Link href="https://www.linkedin.com/in/mithun-raj-dev" target="__blank" rel="noopener noreferrer" className="mx-2 underline underline-offset-8 decoration-[1.5px]">LINKEDIN</Link>
+                <Link href="/" className="mx-2 underline underline-offset-8 decoration-[1.5px]" rel="noopener noreferrer">FACEBOOK</Link>
+                <Link href="/" className="mx-2 underline underline-offset-8 decoration-[1.5px]" rel="noopener noreferrer">INSTAGRAM</Link>
                 <span className="font-xs block m-auto md:m-0">© 2024 MITHUN RAJ</span>
               </div>
             </div>

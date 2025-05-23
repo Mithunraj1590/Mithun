@@ -4,7 +4,6 @@
     z-index: 999;
     top: 0;
     left: 0;
-    width: 100%;
    
 
     &.Scrolled{
@@ -16,6 +15,37 @@
     -webkit-backdrop-filter: blur(15.3px);
     border: 1px solid rgba(24, 24, 24, 0.06);
     transition: all .3s ease-in-out;
+    }
+    .logo{
+        width: 75px;
+        position: relative;
+        height: 54px;
+    }
+
+    .menu_link{
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            right: 0;
+            bottom: -6px;
+            background-color: #fff;
+            width: 0;
+            height: 1px;
+            transition: all .3s ease-in-out;
+
+
+        }
+         &:hover{
+          &::before{
+            width: 80%;
+          }
+        }
+        &.active{
+          &::before{
+            width: 80%;
+          }
+        }
     }
 }
 
