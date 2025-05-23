@@ -90,7 +90,7 @@ const handleChange = (e) => {
     return (
       <div className="p-6 bg-green-50 text-white rounded-lg border border-[#008000]">
         <h3 className="text-xl font-semibold mb-2">Thank you!</h3>
-        <p>Your message has been sent successfully. We'll get back to you soon.</p>
+        <p>Your message has been sent successfully. We`&apos;`ll get back to you soon.</p>
       </div>
     );
   }
