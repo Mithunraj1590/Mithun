@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
-const apiUrl = process.env.API_URL;
+const apiUrl = process.env.NEXT_PUBLIC_API_ENDPOINT;
 const nextConfig = {
   images: {
-    domains: ["https://mithun-omega.vercel.app/"],
+    domains: ["https://db-mithunraj1590s-projects.vercel.app"],
 },
 env: {
     NEXT_PUBLIC_API_ENDPOINT: apiUrl,

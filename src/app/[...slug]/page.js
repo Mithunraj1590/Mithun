@@ -20,7 +20,7 @@ const CommonPage = async ({ params, searchParams }) => {
   const options = {};
   const slug = RefineSlug(params.slug);
   const data = await nextFetch(`api/general/${slug}`, options);
-  console.log(data,"wwwwwwwwwwwwwwwwwwwww");
+
   if (!data) {
     notFound();
   }

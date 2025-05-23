@@ -1,18 +1,12 @@
 import WidgetBlocks from "@/utilities/WidgetBlock";
 import nextFetch from "@/utilities/nextFetch";
-export async function generateMetadata({ params }) {
-  const data = await nextFetch(`api/general/homepage`);
-  return {
-    title: data?.data?.seo?.metaTitle,
-    description: data?.data?.seo?.metaDescription,
-    openGraph: {
-      images: data?.data?.seo?.metaImage?.url?.url,
-    },
-  };
-}
+
 
 const HomePage = async() => {
-  const data = await nextFetch("api/general/homepage"); 
+  const data = await nextFetch('/data/homepage');
+  console.log(data,"aaa");
+  
+  
   return (
     <>
      <main className="isHome">

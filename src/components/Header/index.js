@@ -32,7 +32,7 @@ const MainHeader = () => {
       <div className="container m-auto px-4">
         <div className={`flex items-center justify-between py-8 `}>
           <div className="logo text-white">Logo</div>
-          <div className="flex items-center leading-5 space-x-4 sm:space-x-6">
+          <div className="flex items-center leading-5 space-x-4 sm:space-x-10">
             <NavLinks />
           </div>
         </div>
