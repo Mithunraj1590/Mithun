@@ -21,10 +21,8 @@
     "react-dom": "^18",
     "react-select": "^5.8.0",
     "react-three-fiber": "^6.0.13",
-    "resend": "^4.5.1",
     "sass": "^1.69.7",
-    "three": "^0.167.0",
-    "zod": "^3.25.23"
+    "three": "^0.167.0"
   },
   "devDependencies": {
     "@studio-freight/react-lenis": "^0.0.38",

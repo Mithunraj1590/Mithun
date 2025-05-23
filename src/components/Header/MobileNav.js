@@ -4,6 +4,8 @@ import { useState } from "react";
 import Link from "next/link";
 import headerNavLinks from "src/api/staticData/headerNavLinks";
 import Style from "./Header.module.scss";
+
+
 const MobileNav = () => {
   const [navShow, setNavShow] = useState(false);
 
@@ -11,9 +13,13 @@ const MobileNav = () => {
     setNavShow((status) => {
       if (status) {
         document.body.style.overflow = "auto";
+        document.documentElement.style.height = ""
+         document.body.style.height = "";
       } else {
         // Prevent scrolling
         document.body.style.overflow = "hidden";
+         document.body.style.height = "100vh";
+           document.documentElement.style.height = "100vh";
       }
       return !status;
     });
@@ -29,36 +35,20 @@ const MobileNav = () => {
       <span></span><span></span>
       </button>
       <div
-        className={`fixed left-0 top-0 z-10 h-screen w-full transform opacity-95 dark:opacity-[0.98] bg-white duration-300 ease-in-out dark:bg-gray-950 ${
+        className={`fixed left-0 top-[93px] z-10 w-full transform opacity-95 dark:opacity-[0.98] bg-black duration-300 ease-in-out dark:bg-gray-950 ${
           navShow ? "translate-x-0" : "translate-x-full"
         }`}
+         style={{ height: 'calc(100vh - 94px)',  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+    backdropFilter: 'blur(15.3px)',
+    WebkitBackdropFilter: 'blur(15.3px)', }}
       >
-        <div className="flex justify-end">
-          <button
-            className="mr-8 mt-11 h-8 w-8"
-            aria-label="Toggle Menu"
-            onClick={onToggleNav}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              className="text-gray-900 dark:text-gray-100"
-            >
-              <path
-                fillRule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </button>
-        </div>
+     
         <nav className="fixed mt-8 h-full">
           {headerNavLinks.map((link) => (
             <div key={link.title} className="px-12 py-4">
               <Link
                 href={link.href}
-                className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
+                className="text-2xl font-bold tracking-widest text-white"
                 onClick={onToggleNav}
               >
                 {link.title}

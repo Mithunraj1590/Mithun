@@ -28,7 +28,7 @@ const AboutBanner = (data) => {
                 <div className='text-white'>
                     <h2 className='ttl text-[40px] lg:text-h2 leading-[1] mb-[20px] lg:mb-[30px]'>{data?.data?.title}</h2>
                     <p>{data?.data?.description}</p>
-                    <Link href="" className="btn btn-primary btn-icon max-w-max mt-[30px] md:mt-[35px] xl:mt-[40px]">
+                    <Link href="Mithunraj.pdf" download target="__blank" className="btn btn-primary btn-icon max-w-max mt-[30px] md:mt-[35px] xl:mt-[40px]">
                   DOWNLOAD CV
                   <span className="icon">
                     <Icons size={18} icon="download1" />

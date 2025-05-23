@@ -1,22 +1,26 @@
 /** @type {import('next').NextConfig} */
-const apiUrl = process.env.NEXT_PUBLIC_API_ENDPOINT;
 const nextConfig = {
   images: {
-    domains: ["https://db-mithunraj1590s-projects.vercel.app"],
-},
-env: {
-    NEXT_PUBLIC_API_ENDPOINT: apiUrl,
-},
+    domains: ["mithun-three.vercel.app"], // Domain without https://
+  },
+  env: {
+    NEXT_PUBLIC_API_ENDPOINT: process.env.NEXT_PUBLIC_API_ENDPOINT,
+  },
+  experimental: {
+    serverActions: true, // Required for your form submission
+  },
+  // Optional: Add if you need CORS headers
+  async headers() {
+    return [
+      {
+        source: '/api/:path*',
+        headers: [
+          { key: 'Access-Control-Allow-Origin', value: '*' },
+          { key: 'Access-Control-Allow-Methods', value: 'POST' },
+        ],
+      },
+    ];
+  },
+};
 
-
-}
-const withPWA = require("next-pwa");
-module.exports = withPWA({
-    pwa: {
-      dest: "public",
-      register: true,
-      skipWaiting: true,
-    },
-  });
- 
-  module.exports = nextConfig
+module.exports = nextConfig;

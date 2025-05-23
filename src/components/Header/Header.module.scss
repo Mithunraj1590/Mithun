@@ -1,3 +1,4 @@
+@import "@/styles/mixins";
 .MainHeader {
     position: fixed;
     width: 100%;
@@ -20,6 +21,10 @@
         width: 75px;
         position: relative;
         height: 54px;
+        @include max(576){
+          width: 60px;
+          height: 44px;
+        }
     }
 
     .menu_link{

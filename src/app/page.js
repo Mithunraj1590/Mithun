@@ -3,9 +3,7 @@ import nextFetch from "@/utilities/nextFetch";
 
 
 const HomePage = async() => {
-  const data = await nextFetch('/data/homepage');
-  console.log(data,"aaa");
-  
+  const data = await nextFetch('/data/homepage');  
   
   return (
     <>
