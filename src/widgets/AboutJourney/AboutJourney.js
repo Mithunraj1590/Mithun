@@ -19,7 +19,7 @@ const AboutJourney = (props) => {
                                     <p className='para text-[14px] mb-3 lg:mb-0 lg:pt-3'><span>{data?.start_date}</span> - <span>{data?.end_date}</span></p>
                                     <div className='pl-3 lg:pl-0'>
                                         <h4>{data?.designation} </h4>
-                                         <p className='para text-[14px] mb-1 lg:mb-3'>Experince : <span >{data?.experince} years</span></p>
+                                         <p className='para text-[14px] mb-1 lg:mb-3'>Experince : <span >{data?.experince} </span></p>
                                          <p className='para text-[16px]'>Company : <Link href={`${data?.url}`} className='mx-2  underline-offset-8 decoration-[1.5px] hover:underline'>{data?.company_name}</Link>
                                          </p>
                                     </div>

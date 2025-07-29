@@ -27,6 +27,7 @@ export default function RootLayout({ children }) {
         <meta name="theme-color" content="#000000" />
         <link rel="apple-touch-icon" href="/icon.png"></link>
         <meta name="theme-color" content="#fff" />
+        <title>Mithun raj</title>
       </Head>
       <body className={`${inter.variable} ${jet_brain.variable} ${bai_jamjuree.variable}`} suppressHydrationWarning={true}>
         <GlobalProviders>

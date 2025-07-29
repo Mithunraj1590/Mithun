@@ -3,6 +3,9 @@
 .project_card{
     .figure{
         @include aspectRatio(846, 624);
+        img{
+            object-fit: cover!important;
+        }
     }
     .image{
         transition: all .4s ease-in-out;

@@ -23,60 +23,8 @@
         {
           "widget_type": "HomeBanner",
           "data": {
-            "title": "FRONTEND DEVELOPER",
-            "bannerslides": [
-              {
-                "image_desktop": {
-                  "url": "https://admin.excelledia.webc.in/uploads/banner1_fc6ced1bfe.png",
-                  "alternativeText": null
-                },
-                "image_mobile": {
-                  "url": "https://admin.excelledia.webc.in/uploads/banner1_fc6ced1bfe.png",
-                  "alternativeText": null
-                },
-                "subtitle": "Lee",
-                "title": "All in One Learning Management System",
-                "link": {
-                  "url": "home",
-                  "text": "Know More",
-                  "target_link": true
-                }
-              },
-              {
-                "image_desktop": {
-                  "url": "https://admin.excelledia.webc.in/uploads/excelledia_banner_dcaa518419.jpg",
-                  "alternativeText": null
-                },
-                "image_mobile": {
-                  "url": "https://admin.excelledia.webc.in/uploads/excelledia_banner_dcaa518419.jpg",
-                  "alternativeText": null
-                },
-                "subtitle": "Isorobot",
-                "title": "One Learning Management System ",
-                "link": {
-                  "url": "https://isorobot.io/",
-                  "text": "Know More",
-                  "target_link": true
-                }
-              },
-              {
-                "image_desktop": {
-                  "url": "https://admin.excelledia.webc.in/uploads/banner2_390e9ecec0.png",
-                  "alternativeText": null
-                },
-                "image_mobile": {
-                  "url": "https://admin.excelledia.webc.in/uploads/banner2_390e9ecec0.png",
-                  "alternativeText": null
-                },
-                "subtitle": "Xiro",
-                "title": "Learning Management System ",
-                "link": {
-                  "url": "https://xiro.ai/",
-                  "text": "Know More",
-                  "target_link": true
-                }
-              }
-            ]
+            "title": "FRONTEND DEVELOPER"
+          
           }
         },
         {

@@ -12,7 +12,7 @@ const ContactUs = (data) => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
                     <div>
                         <h2 className='text-white ttl text-[50px] lg:text-[85px] leading-[55px] lg:leading-[.9] mb-[50px] lg:mb-[70px]'>{data?.data?.title}</h2>
-                        <p className='text-white'>Mail : <Link href={`mailto:${data?.data?.email}`} className='hover:border-b'>{data?.data?.email}</Link> </p>w
+                        <p className='text-white mb-2'>Mail : <Link href={`mailto:${data?.data?.email}`} className='hover:border-b mb-2'>{data?.data?.email}</Link> </p>
                         <p className='text-white'>Tel : <Link href={`tel:${data?.data?.mobile}`} className='hover:border-b'>{data?.data?.mobile}</Link> </p>
                     </div>
                     <div className={Style.contact_form}>
