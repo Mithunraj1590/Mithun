@@ -8,6 +8,9 @@ import ContactUs from "@/widgets/ContactUs"
 import WorkList from "@/widgets/WorkList"
 import AboutJourney from "@/widgets/AboutJourney"
 import AboutSkills from "@/widgets/AboutSkills"
+import WorkDetail from "@/widgets/WorkDetail";
+import WorkDetailBanner from "@/widgets/WorkDetailBanner";
+import ImageGrid from "@/widgets/ImageGrid";
 
 const setComponent = (widget) => {
   const components = {
@@ -20,7 +23,10 @@ const setComponent = (widget) => {
     ContactUs,
     WorkList,
     AboutJourney,
-    AboutSkills
+    AboutSkills,
+    WorkDetail,
+    WorkDetailBanner,
+    ImageGrid
   };
   return components[widget.widget_type] || components["default"];
 };

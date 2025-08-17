@@ -5,6 +5,8 @@ const nextFetch = async (slug, ...opt) => {
     ...opt,
   };
 
+  
+
   try {
     const res = await fetch(
       `${process.env.NEXT_PUBLIC_API_ENDPOINT}${slug}`,

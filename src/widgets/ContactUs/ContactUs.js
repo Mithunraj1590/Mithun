@@ -7,8 +7,8 @@ import ContactForm from '@/components/ContactForm'
 const ContactUs = (data) => {
     return (
         <section className='py-[100px] pb-[50px] lg:pt-[200px] lg:h-screen flex items-center'>
-            <FadeAnim>
-            <div className="container fade-elem">
+          
+            <div className="container">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
                     <div>
                         <h2 className='text-white ttl text-[50px] lg:text-[85px] leading-[55px] lg:leading-[.9] mb-[50px] lg:mb-[70px]'>{data?.data?.title}</h2>
@@ -20,7 +20,7 @@ const ContactUs = (data) => {
                     </div>
                 </div>
             </div>
-            </FadeAnim>
+       
         </section>
     )
 }

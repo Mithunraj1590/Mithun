@@ -6,21 +6,21 @@ import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }) {
   const slug = RefineSlug(params.slug);
-  const data = await nextFetch(`api/general/${slug}`);
+  const data = await nextFetch(`work/${slug}`);
   return {
     title: data?.data?.seo?.metaTitle,
     description: data?.data?.seo?.metaDescription,
     openGraph: {
-      images: data?.data?.seo?.metaImage?.url?.url,
+      images: data?.data?.seo?.metaImage?.url,
     },
   };
 }
 
-const CommonPage = async ({ params, searchParams }) => {
+const WorkDetailPage = async ({ params, searchParams }) => {
   const options = {};
   const slug = RefineSlug(params.slug);
-  const data = await nextFetch(`api/${slug}`, options);
-
+  const data = await nextFetch(`api/work/${slug}`, options);
+  console.log(data.data.widgets,"aaa");
 
   if (!data) {
     notFound();
@@ -32,4 +32,4 @@ const CommonPage = async ({ params, searchParams }) => {
   );
 };
 
-export default CommonPage;
+export default WorkDetailPage;
