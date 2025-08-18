@@ -6,7 +6,7 @@ import Select from 'react-select';
 import FadeAnim from '@/utilities/FadeAnim';
 
 const WorkList = (data) => {
-    console.log(data.data,"data");
+
     
     const [selectedOption, setSelectedOption] = useState(data?.data?.category[0]);
     return (

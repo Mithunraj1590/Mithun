@@ -1,8 +1,11 @@
+"use client"
 import SkillCard from '@/components/SkillCard'
 import FadeAnim from '@/utilities/FadeAnim'
 import React from 'react'
 
 const AboutSkills = (data) => {
+  console.log(data,"data");
+  
   return (
     <section className='pb-[50px] pt-[100px] lg:py-[100px]'>
           <FadeAnim>

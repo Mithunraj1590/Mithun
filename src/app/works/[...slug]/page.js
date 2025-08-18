@@ -20,7 +20,7 @@ const WorkDetailPage = async ({ params, searchParams }) => {
   const options = {};
   const slug = RefineSlug(params.slug);
   const data = await nextFetch(`api/work/${slug}`, options);
-  console.log(data.data.widgets,"aaa");
+
 
   if (!data) {
     notFound();
