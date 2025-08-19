@@ -24,7 +24,7 @@ const WorkDetailBanner = (data) => {
                                     </span>
                                 )}
                             </div>
-                            <h1 className="text-h2 leading-[0.8] mb-[30px] text-white">
+                            <h1 className="ttl text-h2 leading-[1.2] mb-[20px] text-white ">
                                 {bannerData?.title}
                             </h1>
                             <p className="text-[20px] text-white leading-[1.6] mb-[40px]">
