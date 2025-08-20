@@ -3,9 +3,14 @@ import React from 'react';
 import FadeAnim from '@/utilities/FadeAnim';
 import Icon from '@/styles/Icons';
 import Style from "./WorkDetailBanner.module.scss";
+import parse from 'html-react-parser';
+
 
 const WorkDetailBanner = (data) => {
     const bannerData = data?.data;
+
+    console.log(bannerData,"dt1");
+    
 
     return (
         <section className={`py-[50px] lg:py-[100px] mt-[100px] ${Style.workDetailBanner}`}>
@@ -24,7 +29,7 @@ const WorkDetailBanner = (data) => {
                                     </span>
                                 )}
                             </div>
-                            <h1 className="ttl text-h2 leading-[1.2] mb-[20px] text-white ">
+                            <h1 className="ttl text-h3 leading-[1.2] mb-[20px] text-white font-bold">
                                 {bannerData?.title}
                             </h1>
                             <p className="text-[20px] text-white leading-[1.6] mb-[40px]">
@@ -67,12 +72,14 @@ const WorkDetailBanner = (data) => {
                                     <img 
                                         src={bannerData.image} 
                                         alt={bannerData.title}
-                                        className="w-full h-[500px] object-cover rounded-[30px] group-hover:scale-105 transition-all duration-500"
+                                        className="w-full h-[500px] object-cover rounded-[30px]  transition-all duration-500"
                                     />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-[30px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                 </div>
                             </div>
                         )}
+                    </div>
+                    <div className={`text-white text-[20px] leading-[1.6] mt-[100px] ${Style.admincontent}`}>
+                        {parse(bannerData.longDescription)}
                     </div>
                 </div>
             </FadeAnim>

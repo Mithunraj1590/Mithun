@@ -14,7 +14,7 @@
     "@react-three/drei": "^9.109.5",
     "@react-three/fiber": "^8.17.5",
     "gsap": "^3.12.5",
-    "html-react-parser": "^5.1.12",
+    "html-react-parser": "^5.2.6",
     "next": "14.0.4",
     "next-pwa": "^5.6.0",
     "react": "^18",
